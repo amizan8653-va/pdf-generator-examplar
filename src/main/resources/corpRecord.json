@@ -18,8 +18,8 @@
   "zipCode" : "94921",
   "services" : [ {
     "branchOfServiceName" : "Army",
-    "enteredOnDutyDate" : "08301977",
-    "releasedActiveDutyDate" : "12121984",
+    "enteredOnDutyDate" : "8/30/77, 12:00 AM",
+    "releasedActiveDutyDate" : "12/12/84, 12:00 AM",
     "characterOfServiceCode" : "HON"
   }, {
     "branchOfServiceName" : "",
@@ -69,7 +69,7 @@
   "chapter35EligibilityDateTime" : "March 14, 2018",
   "activeAwardLine" : {
     "netAward" : "1288.03",
-    "effectiveDate" : "12012021",
+    "effectiveDate" : "12/12/21, 12:00 AM",
     "entitlementCd" : null,
     "entitlementNm" : null,
     "totalAward" : null

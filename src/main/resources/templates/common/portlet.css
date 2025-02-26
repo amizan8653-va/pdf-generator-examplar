@@ -1,0 +1,277 @@
+@charset "utf-8";
+.SR_only {
+    left: -9000px;
+    display: block;
+    position: absolute
+}
+#myebenefits h3 .subtitle {
+    font-weight: normal;
+    font-size: 70%
+}
+#myebenefits h4 {
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-bottom: 0px;
+    font-weight: bold
+}
+#portlet_letter_generator .column {
+    border: solid 1px #cccccc;
+    margin-bottom: 2em
+}
+#portlet_letter_generator .content_container {
+    padding: 10px;
+    margin: 0 0 10px 0
+}
+#portlet_letter_generator .address {
+    font-weight: bold
+}
+body#generated_letter {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 511pt;
+    border: solid 0px;
+    font-size: 85%
+}
+#generated_letter .tg {
+    border-spacing: 0
+}
+#generated_letter .tg td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal
+}
+#generated_letter .tg th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal
+}
+#generated_letter .tg th #bold_th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 5px;
+    overflow: hidden;
+    word-break: normal
+}
+#generated_letter .tg .tg-yw4l {
+    vertical-align: top
+}
+#generated_letter h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    overflow: hidden;
+    word-break: normal
+}
+#generated_letter #header_container {
+    margin-bottom: 10px;
+    width: 100%
+}
+#generated_letter #header img {
+    float: left;
+    margin: 0px 0px 0 0
+}
+#generated_letter .headerAddress, #generated_letter .headerAddressDocCentered {
+    text-align: center;
+    color: #000080;
+    margin: 0px 0 0px 0px;
+    font-weight: bold;
+    font-size: 105%
+}
+#generated_letter .headerAddressDocCentered {
+    padding-right: 85px
+}
+#generated_letter .recipientAddress {
+    clear: both
+}
+#generated_letter .replyRefer {
+    float: right;
+    margin-right: 50px
+}
+#generated_letter #content_container {
+    position: relative;
+    clear: both
+}
+#generated_letter #content, #generated_letter #signature {
+    position: relative;
+    z-index: 1
+}
+#generated_letter #watermark {
+    position: absolute;
+    top: 60px;
+    left: 160px;
+    z-index: 0
+}
+#generated_letter .salutation {
+    padding-top: 0px;
+    padding-bottom: 0px
+}
+#generated_letter h2 {
+    font-size: 120%;
+    font-weight: bold;
+    margin-top: 30px
+}
+#generated_letter div.contact_us {
+    padding-left: 25px
+}
+#generated_letter div.contact_us ul {
+    padding-left: 15px
+}
+#generated_letter #signature {
+    margin: 50px 0 50px 0
+}
+#generated_letter .clearboth {
+    clear: both
+}
+#generated_letter table {
+    margin-left: 0px
+}
+#generated_letter table th, #generated_letter table td {
+    text-align: left;
+    padding: 0px 20px 15px 0
+}
+#generated_letter table.service_periods, #generated_letter table.contact-info {
+    margin-left: 0px
+}
+#generated_letter table.contact-info th.row {
+    width: 150px;
+    vertical-align: top
+}
+#generated_letter table.service_periods th, #generated_letter table.service_periods td {
+    padding-bottom: 0px
+}
+#generated_letter td p {
+    margin: 0 0 12px 0
+}
+#benefit-table {
+    margin: 0;
+    padding: 0;
+    width: 50%
+}
+#generated_letter .military-information th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+    word-break: normal;
+    width: 511pt
+}
+#generated_letter .military-information td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    font-weight: normal;
+    padding: 2px 0px 0px 0px;
+    overflow: hidden;
+    word-break: normal
+}
+#generated_letter .benefit-information th {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    font-weight: bold;
+    padding: 10px 10px 0px 30px;
+    overflow: hidden;
+    word-break: normal;
+    width: 451pt
+}
+#generated_letter .benefit-information td {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 85%;
+    font-weight: normal;
+    padding: 10px 0px 0px 0px;
+    overflow: hidden;
+    word-break: normal
+}
+h2.h2 + .select_options {
+    margin-top: -10px
+}
+.select_options {
+    display: block;
+    margin-bottom: 10px
+}
+.benefit-summary-form .tabular_content td, .benefit-summary-form .tabular_content th {
+    vertical-align: text-top
+}
+#benefits_list th, #benefits_list tr td {
+    border: 1px solid black
+}
+.benefit-summary-form th.checkbox {
+    width: 8%
+}
+.benefit-summary-form td.checkbox {
+    text-align: center
+}
+#generated_letter #proof-of-service-card {
+    margin-left: 0px;
+    font-size: 15px
+}
+#proof-of-service-card .card td {
+    border: 0px dashed #000000;
+    width: 50%
+}
+#proof-of-service-card .side-label td {
+    padding: 5px
+}
+#proof-of-service-card .card-content {
+    position: relative
+}
+#proof-of-service-card p {
+    position: relative;
+    z-index: 2
+}
+#proof-of-service-card #card-watermark {
+    position: absolute;
+    z-index: 1;
+    bottom: -10px;
+    left: 70px;
+    width: 160px;
+    height: 157px
+}
+.notificationGreen, .notificationBlue, .notificationRed, .notificationYellow {
+    border: 1px solid #9adb60;
+    background-color: #d8f9bb;
+    margin: 15px 0;
+    width: 100%
+}
+.notificationGreen h3, .notificationYellow h2, .notificationBlue h3, .notificationYellow h2, .notificationRed h3, .notificationYellow h2, .notificationYellow h3, .notificationYellow h2 {
+    color: #000000;
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    margin: 15px 10px 10px 10px !important;
+    padding: 0 0 0 30px !important
+}
+.notificationGreen p.header_noh3, .notificationBlue p.header_noh3, .notificationRed p.header_noh3, .notificationYellow p.header_noh3 {
+    color: #000000;
+    display: block;
+    font-size: 0.95em;
+    font-weight: normal;
+    line-height: 20px;
+    margin: 15px 10px 10px 10px;
+    padding: 0 0 0 30px !important
+}
+.notificationGreen p, .notificationGreen ul, .notificationBlue p, .notificationBlue ul, .notificationRed p, .notificationRed ul, .notificationYellow p, .notificationYellow ul {
+    color: #000000;
+    padding: 0 15px 10px 40px
+}
+.notificationGreen.alert-box, .notificationBlue.alert-box, .notificationRed.alert-box, .notificationYellow.alert-box {
+    border-radius: 0;
+    padding: 0
+}
+.notificationYellow {
+    border: 1px solid #f2c21d;
+    background-color: #fff8de
+}
+.notificationYellow h2, .notificationYellow h3 {
+    background: url(../css_images/notification_icon_yellow_small.png);
+    background-repeat: no-repeat
+}
+.notificationYellow p.header_noh2, .notificationYellow p.header_noh3 {
+    background: url(../css_images/notification_icon_yellow_small.png);
+    background-repeat: no-repeat
+}
