@@ -18,8 +18,8 @@
   "zipCode" : "94921",
   "services" : [ {
     "branchOfServiceName" : "Army",
-    "enteredOnDutyDate" : "8/30/77, 12:00 AM",
-    "releasedActiveDutyDate" : "12/12/84, 12:00 AM",
+    "enteredOnDutyDate" : "08301977",
+    "releasedActiveDutyDate" : "12121984",
     "characterOfServiceCode" : "HON"
   }, {
     "branchOfServiceName" : "",
@@ -69,23 +69,32 @@
   "chapter35EligibilityDateTime" : "March 14, 2018",
   "activeAwardLine" : {
     "netAward" : "1288.03",
-    "effectiveDate" : "12/12/21, 12:00 AM",
+    "effectiveDate" : "12012021",
     "entitlementCd" : null,
     "entitlementNm" : null,
     "totalAward" : null
   },
   "dateFormatterInput" : {
+    "calendar" : -784053093833,
+    "2DigitYearStart" : -784053093833,
     "dateFormatSymbols" : {
+      "eras" : [ "BC", "AD" ],
       "amPmStrings" : [ "AM", "PM" ]
     },
     "timeZone" : "America/New_York",
     "lenient" : true
   },
   "dateFormatterOutput" : {
+    "calendar" : -784053093833,
+    "2DigitYearStart" : -784053093833,
+    "dateFormatSymbols" : {
+      "eras" : [ "BC", "AD" ],
+      "amPmStrings" : [ "AM", "PM" ]
+    },
     "timeZone" : "America/New_York",
     "lenient" : true
   },
-  "isDeathRatingServiceConnectedDisability" : false,
   "isServiceEntitlement" : false,
-  "isPensionEntitlement" : false
+  "isPensionEntitlement" : false,
+  "isDeathRatingServiceConnectedDisability" : false
 }

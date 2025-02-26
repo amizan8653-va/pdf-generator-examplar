@@ -11,9 +11,11 @@ import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
+import java.text.SimpleDateFormat;
 import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
+import java.util.Locale;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -45,6 +47,9 @@ public class Main {
         BufferedReader reader = new BufferedReader(isr);
         String content = reader.lines().collect(Collectors.joining(System.lineSeparator()));
         ObjectMapper mapper = new ObjectMapper().registerModule(new JavaTimeModule());
-        return mapper.readValue(content, CorpRecord.class);
+        CorpRecord corpRecord = mapper.readValue(content, CorpRecord.class);
+        corpRecord.setDateFormatterInput(new SimpleDateFormat("MMddyyyy", Locale.US));
+        corpRecord.setDateFormatterOutput(new SimpleDateFormat("MMMM dd, yyyy", Locale.US));
+        return corpRecord;
     }
 }

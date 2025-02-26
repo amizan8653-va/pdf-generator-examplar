@@ -7,6 +7,7 @@ import org.example.model.BenefitSummaryLetterOptions;
 import  org.example.model.LetterAddress;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 import lombok.experimental.Accessors;
 
 import java.text.SimpleDateFormat;
@@ -102,9 +103,9 @@ public class CorpRecord {
 
   private boolean isDeathRatingServiceConnectedDisability;
 
-  private SimpleDateFormat dateFormatterInput;
+  @Setter private SimpleDateFormat dateFormatterInput;
 
-  private SimpleDateFormat dateFormatterOutput;
+  @Setter private SimpleDateFormat dateFormatterOutput;
 
   private boolean isServiceEntitlement;
 
