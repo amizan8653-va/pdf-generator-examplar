@@ -16,7 +16,6 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-@Slf4j
 public class CommonPdfLetterUtil {
   private static final String CONTACT_US_TITLE = "How You Can Contact Us";
 

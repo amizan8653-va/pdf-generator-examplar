@@ -24,7 +24,6 @@ import java.util.Optional;
 
 import static java.lang.Math.min;
 
-@Slf4j
 public abstract class BenefitSummaryLetterPdf {
   public static final String MILITARY_INFORMATION_TITLE = "Military Information";
 

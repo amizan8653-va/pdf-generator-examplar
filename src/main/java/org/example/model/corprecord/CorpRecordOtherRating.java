@@ -1,17 +1,23 @@
 package org.example.model.corprecord;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 @Builder
 @Getter
 @Accessors(fluent = false)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@NoArgsConstructor
+@AllArgsConstructor
 public class CorpRecordOtherRating {
 
-  private final String disabilityTypeName;
+  private String disabilityTypeName;
 
-  private final String decisionTypeName;
+  private String decisionTypeName;
 
   @Override
   public String toString() {

@@ -62,8 +62,6 @@ import java.util.stream.Stream;
 
 import static org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationLink.HIGHLIGHT_MODE_OUTLINE;
 
-// todo: PAC accessibility tool reports inconsistent entries in struct tree. find out why.
-@Slf4j
 @Accessors(fluent = true)
 public class CustomTaggedPdfBuilder {
   private static final String WATERMARK_PATH_FILENAME = "templates/common/watermark.jpg";

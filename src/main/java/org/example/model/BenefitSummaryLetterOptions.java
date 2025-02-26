@@ -1,12 +1,16 @@
 package org.example.model;
 
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 @Builder
 @Getter
 @Accessors(fluent = false)
+@NoArgsConstructor
+@AllArgsConstructor
 public class BenefitSummaryLetterOptions {
   boolean militaryService;
   boolean serviceConnectedDisabilities;

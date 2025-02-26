@@ -1,17 +1,23 @@
 package org.example.model.corprecord;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 
 @Getter
 @Builder
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@NoArgsConstructor
+@AllArgsConstructor
 public class Service {
-  final String branchOfServiceName;
+  String branchOfServiceName;
 
-  final String enteredOnDutyDate;
+  String enteredOnDutyDate;
 
-  final String releasedActiveDutyDate;
+  String releasedActiveDutyDate;
 
-  final String characterOfServiceCode;
+  String characterOfServiceCode;
 
 }

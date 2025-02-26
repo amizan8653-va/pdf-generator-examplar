@@ -1,5 +1,8 @@
 package org.example.model.corprecord;
 
+import com.fasterxml.jackson.annotation.JsonAutoDetect;
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 import org.example.model.BenefitSummaryLetterOptions;
 import  org.example.model.LetterAddress;
 import lombok.Builder;
@@ -12,99 +15,102 @@ import java.util.List;
 @Builder
 @Getter
 @Accessors(fluent = false)
+@JsonAutoDetect(fieldVisibility = JsonAutoDetect.Visibility.ANY)
+@NoArgsConstructor
+@AllArgsConstructor
 public class CorpRecord {
-  private final String fileNumber;
+  private String fileNumber;
 
-  private final String ssn;
+  private String ssn;
 
-  private final String letterDate;
+  private String letterDate;
 
-  private final String firstName;
+  private String firstName;
 
-  private final String middleName;
+  private String middleName;
 
-  private final String lastName;
+  private String lastName;
 
-  private final String suffixName;
+  private String suffixName;
 
-  private final String salutationName;
+  private String salutationName;
 
-  private final String headOfFamilyFirstName;
+  private String headOfFamilyFirstName;
 
-  private final String headOfFamilyLastName;
+  private String headOfFamilyLastName;
 
-  private final String country;
+  private String country;
 
-  private final String state;
+  private String state;
 
-  private final String addressLine1;
+  private String addressLine1;
 
-  private final String addressLine2;
+  private String addressLine2;
 
-  private final String addressLine3;
+  private String addressLine3;
 
-  private final String city;
+  private String city;
 
-  private final String zipCode;
+  private String zipCode;
 
-  private final List<Service> services;
+  private List<Service> services;
 
-  private final String dateOfFutureExam;
+  private String dateOfFutureExam;
 
-  private final String branchOfService;
+  private String branchOfService;
 
-  private final String dateOfBirth;
+  private String dateOfBirth;
 
-  private final String edipi;
+  private String edipi;
 
-  private final BenefitSummaryLetterOptions benefitSummaryLetterOptions;
+  private BenefitSummaryLetterOptions benefitSummaryLetterOptions;
 
-  private final String vadsInd;
+  private String vadsInd;
 
-  private final String vadsInd3;
+  private String vadsInd3;
 
-  private final String vadsInd2;
+  private String vadsInd2;
 
-  private final String verifiedServiceDataInd;
+  private String verifiedServiceDataInd;
 
-  private final String verifiedServiceDataInd2;
+  private String verifiedServiceDataInd2;
 
-  private final String verifiedServiceDataInd3;
+  private String verifiedServiceDataInd3;
 
-  private final List<CorpRecordOtherRating> otherRatings;
+  private List<CorpRecordOtherRating> otherRatings;
 
-  private final CorpRecordOtherRating nonServiceConnectedOtherRating;
+  private CorpRecordOtherRating nonServiceConnectedOtherRating;
 
-  private final List<SpecialMonthlyCompensationRating> specialMonthlyCompensationRating;
+  private List<SpecialMonthlyCompensationRating> specialMonthlyCompensationRating;
 
-  private final List<SpecialMonthlyCompensationParagraphRating>
+  private List<SpecialMonthlyCompensationParagraphRating>
       specialMonthlyCompensationParagraphRating;
 
-  private final String specialAdaptiveHousing;
+  private String specialAdaptiveHousing;
 
-  private final String serviceConnectedCombinedDegree;
+  private String serviceConnectedCombinedDegree;
 
-  private final CorpRecordAwardInfo awardInfo;
+  private CorpRecordAwardInfo awardInfo;
 
-  private final String claimantCurrentMonthlyRate;
+  private String claimantCurrentMonthlyRate;
 
-  private final boolean chapter35Eligibility;
+  private boolean chapter35Eligibility;
 
-  private final String chapter35EligibilityDateTime;
+  private String chapter35EligibilityDateTime;
 
-  private final ActiveAwardLine activeAwardLine;
+  private ActiveAwardLine activeAwardLine;
 
-  private final boolean isDeathRatingServiceConnectedDisability;
+  private boolean isDeathRatingServiceConnectedDisability;
 
-  private final SimpleDateFormat dateFormatterInput;
+  private SimpleDateFormat dateFormatterInput;
 
-  private final SimpleDateFormat dateFormatterOutput;
+  private SimpleDateFormat dateFormatterOutput;
 
-  private final boolean isServiceEntitlement;
+  private boolean isServiceEntitlement;
 
-  private final boolean isPensionEntitlement;
+  private boolean isPensionEntitlement;
 
   // specifying builder so that it can implement common interface. Lombok @Builder fills the rest.
   // reference: https://stackoverflow.com/a/71668089/4832515
-  public static final class CorpRecordBuilder implements LetterAddress {}
+  public static class CorpRecordBuilder implements LetterAddress {}
 }
