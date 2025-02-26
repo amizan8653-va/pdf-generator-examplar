@@ -6,7 +6,7 @@ So just simple text, images, and tables. There's also a footer which is ignored 
 for the very last footer of the last page. There is also a background image that's not read by screen reader.
 
 To check the 508 compliance of a PDF generated, you can use this free tool.
-A copy of this tool is also included in [this repo](). Unfortunately... it's a windows only tool.
+A copy of this tool is also included in [this repo](accessibility-checker-tool/PAC_24.3.2.0.zip). Unfortunately... it's a windows only tool.
 https://pac.pdf-accessibility.org/en
 
 
