@@ -12,6 +12,8 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URI;
 import java.time.Instant;
+import java.time.ZoneOffset;
+import java.time.format.DateTimeFormatter;
 import java.util.stream.Collectors;
 
 public class Main {
@@ -27,7 +29,10 @@ public class Main {
     private static void writeToFile(byte[] bytes) {
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
         URI resource = classLoader.getResource("./").toURI();
-        FileOutputStream fos = new FileOutputStream(resource.getPath() + "/pdf-example-" + Instant.now() + ".pdf");
+        DateTimeFormatter formatter = DateTimeFormatter
+                .ofPattern("u-M-d k-m-s")
+                .withZone(ZoneOffset.UTC);
+        FileOutputStream fos = new FileOutputStream(resource.getPath() + "/pdf-example-" + formatter.format(Instant.now()) + ".pdf");
         fos.write(bytes);
     }
 
