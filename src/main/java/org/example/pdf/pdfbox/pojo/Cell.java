@@ -1,9 +1,9 @@
 package org.example.pdf.pdfbox.pojo;
 
+import lombok.Getter;
 import lombok.experimental.Accessors;
 import org.example.pdf.pdfbox.enums.CellFormatting;
 import org.example.pdf.pdfbox.enums.Font;
-import lombok.Getter;
 
 import java.awt.*;
 

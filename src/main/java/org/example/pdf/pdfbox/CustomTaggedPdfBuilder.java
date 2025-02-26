@@ -1,18 +1,8 @@
 package org.example.pdf.pdfbox;
 
-import lombok.experimental.Accessors;
-import org.example.pdf.pdfbox.enums.Font;
-import org.example.pdf.pdfbox.enums.TableHeaderType;
-import org.example.pdf.pdfbox.pojo.Cell;
-import org.example.pdf.pdfbox.pojo.DataTable;
-import org.example.pdf.pdfbox.pojo.NewPageRelatedVariables;
-import org.example.pdf.pdfbox.pojo.PageMargins;
-import org.example.pdf.pdfbox.pojo.Row;
-import org.example.pdf.pdfbox.pojo.Text;
-import org.example.pdf.pdfbox.pojo.UpdatedPagePosition;
 import lombok.Getter;
 import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
+import lombok.experimental.Accessors;
 import org.apache.pdfbox.cos.COSArray;
 import org.apache.pdfbox.cos.COSDictionary;
 import org.apache.pdfbox.cos.COSFloat;
@@ -46,6 +36,15 @@ import org.apache.pdfbox.pdmodel.interactive.viewerpreferences.PDViewerPreferenc
 import org.apache.xmpbox.XMPMetadata;
 import org.apache.xmpbox.schema.XMPSchema;
 import org.apache.xmpbox.xml.XmpSerializer;
+import org.example.pdf.pdfbox.enums.Font;
+import org.example.pdf.pdfbox.enums.TableHeaderType;
+import org.example.pdf.pdfbox.pojo.Cell;
+import org.example.pdf.pdfbox.pojo.DataTable;
+import org.example.pdf.pdfbox.pojo.NewPageRelatedVariables;
+import org.example.pdf.pdfbox.pojo.PageMargins;
+import org.example.pdf.pdfbox.pojo.Row;
+import org.example.pdf.pdfbox.pojo.Text;
+import org.example.pdf.pdfbox.pojo.UpdatedPagePosition;
 
 import java.awt.*;
 import java.io.ByteArrayOutputStream;

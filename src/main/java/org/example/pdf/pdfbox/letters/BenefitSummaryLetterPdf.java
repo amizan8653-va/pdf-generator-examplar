@@ -1,5 +1,9 @@
 package org.example.pdf.pdfbox.letters;
 
+import lombok.SneakyThrows;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
+import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 import org.example.model.corprecord.CorpRecord;
 import org.example.model.corprecord.Service;
 import org.example.pdf.pdfbox.CustomTaggedPdfBuilder;
@@ -10,11 +14,6 @@ import org.example.pdf.pdfbox.pojo.Cell;
 import org.example.pdf.pdfbox.pojo.DataTable;
 import org.example.pdf.pdfbox.pojo.Row;
 import org.example.pdf.pdfbox.pojo.Text;
-import lombok.SneakyThrows;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
-import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 
 import java.awt.*;
 import java.text.ParseException;

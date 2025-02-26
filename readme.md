@@ -9,3 +9,6 @@ To check the 508 compliance of a PDF generated, you can use this free tool:
 https://pac.pdf-accessibility.org/en
 
 a copy of this tool is also included in this repository. Unfortunately... it's a windows only tool.
+
+note: this entire thing was based off of a stack overflow post: 
+https://stackoverflow.com/questions/49682339/how-can-i-create-an-accessible-pdf-with-java-pdfbox-2-0-8-library-that-is-also-v

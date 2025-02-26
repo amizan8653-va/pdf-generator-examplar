@@ -2,13 +2,13 @@ package org.example.model.corprecord;
 
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import lombok.AllArgsConstructor;
-import lombok.NoArgsConstructor;
-import org.example.model.BenefitSummaryLetterOptions;
-import  org.example.model.LetterAddress;
 import lombok.Builder;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.experimental.Accessors;
+import org.example.model.BenefitSummaryLetterOptions;
+import org.example.model.LetterAddress;
 
 import java.text.SimpleDateFormat;
 import java.util.List;

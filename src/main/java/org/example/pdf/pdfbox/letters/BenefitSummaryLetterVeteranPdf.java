@@ -1,6 +1,14 @@
 package org.example.pdf.pdfbox.letters;
 
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.SneakyThrows;
 import lombok.experimental.Accessors;
+import org.apache.commons.lang3.StringUtils;
+import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
+import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
+import org.example.model.BenefitSummaryLetterOptions;
 import org.example.model.corprecord.CorpRecord;
 import org.example.model.corprecord.CorpRecordOtherRating;
 import org.example.model.corprecord.SpecialMonthlyCompensationParagraphRating;
@@ -16,14 +24,6 @@ import org.example.pdf.pdfbox.pojo.PageMargins;
 import org.example.pdf.pdfbox.pojo.Row;
 import org.example.pdf.pdfbox.pojo.Text;
 import org.example.pdf.pdfbox.pojo.UpdatedPagePosition;
-import org.example.model.BenefitSummaryLetterOptions;
-import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.SneakyThrows;
-import org.apache.commons.lang3.StringUtils;
-import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
-import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 
 import java.awt.*;
 import java.util.Arrays;

@@ -1,8 +1,8 @@
 package org.example.pdf;
 
+import lombok.SneakyThrows;
 import org.example.model.corprecord.CorpRecord;
 import org.example.pdf.pdfbox.letters.BenefitSummaryLetterVeteranPdf;
-import lombok.SneakyThrows;
 
 public class PdfBoxGenerator implements PdfGenerator {
 

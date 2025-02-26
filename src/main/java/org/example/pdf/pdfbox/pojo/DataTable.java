@@ -1,8 +1,8 @@
 package org.example.pdf.pdfbox.pojo;
 
+import lombok.Getter;
 import lombok.experimental.Accessors;
 import org.example.pdf.pdfbox.enums.TableHeaderType;
-import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;

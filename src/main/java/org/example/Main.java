@@ -39,7 +39,7 @@ public class Main {
     }
 
     @SneakyThrows
-    private static CorpRecord loadCorpRecord() {
+    static CorpRecord loadCorpRecord() {
         ClassLoader classLoader = ClassLoader.getSystemClassLoader();
         InputStream is = classLoader.getResourceAsStream("corpRecord.json");
         assert is != null;

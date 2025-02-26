@@ -1,9 +1,9 @@
 package org.example.pdf.pdfbox.pojo;
 
-import lombok.experimental.Accessors;
-import org.example.pdf.pdfbox.enums.Font;
 import lombok.Getter;
 import lombok.Setter;
+import lombok.experimental.Accessors;
+import org.example.pdf.pdfbox.enums.Font;
 
 import java.awt.*;
 import java.util.List;

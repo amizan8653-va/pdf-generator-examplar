@@ -45,7 +45,7 @@
     "unemployable" : true,
     "specialMonthlyCompensation" : true,
     "adaptedHousing" : true,
-    "chapter35Eligibility" : true
+    "chapter35Eligibility" : false
   },
   "vadsInd" : "",
   "vadsInd3" : "",
@@ -65,7 +65,7 @@
     "benefitCode" : "CPL"
   },
   "claimantCurrentMonthlyRate" : "1288.03",
-  "chapter35Eligibility" : true,
+  "chapter35Eligibility" : false,
   "chapter35EligibilityDateTime" : "March 14, 2018",
   "activeAwardLine" : {
     "netAward" : "1288.03",
@@ -73,26 +73,6 @@
     "entitlementCd" : null,
     "entitlementNm" : null,
     "totalAward" : null
-  },
-  "dateFormatterInput" : {
-    "calendar" : -784053093833,
-    "2DigitYearStart" : -784053093833,
-    "dateFormatSymbols" : {
-      "eras" : [ "BC", "AD" ],
-      "amPmStrings" : [ "AM", "PM" ]
-    },
-    "timeZone" : "America/New_York",
-    "lenient" : true
-  },
-  "dateFormatterOutput" : {
-    "calendar" : -784053093833,
-    "2DigitYearStart" : -784053093833,
-    "dateFormatSymbols" : {
-      "eras" : [ "BC", "AD" ],
-      "amPmStrings" : [ "AM", "PM" ]
-    },
-    "timeZone" : "America/New_York",
-    "lenient" : true
   },
   "isServiceEntitlement" : false,
   "isPensionEntitlement" : false,

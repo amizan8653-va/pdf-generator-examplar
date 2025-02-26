@@ -1,7 +1,9 @@
 package org.example;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
+
+import lombok.SneakyThrows;
+import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
+import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 import org.example.model.corprecord.CorpRecord;
 import org.example.pdf.PdfBoxGenerator;
 import org.example.pdf.pdfbox.CustomTaggedPdfBuilder;
@@ -14,27 +16,16 @@ import org.example.pdf.pdfbox.pojo.PageMargins;
 import org.example.pdf.pdfbox.pojo.Row;
 import org.example.pdf.pdfbox.pojo.Text;
 import org.example.pdf.pdfbox.pojo.UpdatedPagePosition;
-import lombok.SneakyThrows;
-import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
-import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 import org.junit.jupiter.api.Test;
 
-import java.awt.*;
-import java.io.BufferedReader;
-import java.io.FileOutputStream;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.net.URI;
-import java.text.SimpleDateFormat;
-import java.time.Instant;
-import java.time.ZoneOffset;
-import java.time.format.DateTimeFormatter;
+import java.awt.Color;
 import java.util.Arrays;
 import java.util.List;
-import java.util.Locale;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
+
+import static org.example.Main.loadCorpRecord;
 
 public class CustomTaggedPdfBuilderTest {
   final float spaceBetweenBulletListItems = 5;
@@ -469,21 +460,5 @@ public class CustomTaggedPdfBuilderTest {
     byte[] bytes = generator.generatePdfForTemplate(corpRecord, "Some footer. Hello World!");
     PdfTestingUtil.testPdfsAreEqualExceptDatesAndUuids(
             bytes, "pdf-library/jesse-gray-benefit-summary.pdf", 0.01f);
-  }
-
-
-  @SneakyThrows
-  private static CorpRecord loadCorpRecord() {
-    ClassLoader classLoader = ClassLoader.getSystemClassLoader();
-    InputStream is = classLoader.getResourceAsStream("corpRecord.json");
-    assert is != null;
-    InputStreamReader isr = new InputStreamReader(is);
-    BufferedReader reader = new BufferedReader(isr);
-    String content = reader.lines().collect(Collectors.joining(System.lineSeparator()));
-    ObjectMapper mapper = new ObjectMapper().registerModule(new JavaTimeModule());
-    CorpRecord corpRecord = mapper.readValue(content, CorpRecord.class);
-    corpRecord.setDateFormatterInput(new SimpleDateFormat("MMddyyyy", Locale.US));
-    corpRecord.setDateFormatterOutput(new SimpleDateFormat("MMMM dd, yyyy", Locale.US));
-    return corpRecord;
   }
 }

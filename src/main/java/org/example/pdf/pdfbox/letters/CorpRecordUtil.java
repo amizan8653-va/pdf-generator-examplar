@@ -1,7 +1,7 @@
 package org.example.pdf.pdfbox.letters;
 
-import org.example.model.corprecord.CorpRecord;
 import org.apache.commons.lang3.StringUtils;
+import org.example.model.corprecord.CorpRecord;
 
 import java.util.ArrayList;
 import java.util.List;

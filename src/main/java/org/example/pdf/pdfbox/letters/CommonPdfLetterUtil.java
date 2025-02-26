@@ -1,13 +1,12 @@
 package org.example.pdf.pdfbox.letters;
 
+import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
+import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 import org.example.model.corprecord.CorpRecord;
 import org.example.pdf.pdfbox.CustomTaggedPdfBuilder;
 import org.example.pdf.pdfbox.enums.Font;
 import org.example.pdf.pdfbox.pojo.Text;
 import org.example.pdf.pdfbox.pojo.UpdatedPagePosition;
-import lombok.extern.slf4j.Slf4j;
-import org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureElement;
-import org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes;
 
 import java.awt.*;
 import java.util.ArrayList;
